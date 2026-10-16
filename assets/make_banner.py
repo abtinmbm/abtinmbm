@@ -19,6 +19,8 @@ MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monosp
 SERIF = "Georgia, 'Iowan Old Style', 'Times New Roman', serif"
 
 W, H = 1200, 300
+PAUSE_MS = 3000   # how long the finished name stays up before replaying
+FADE_MS = 300
 name = "abtin aryanpour"
 
 rng = random.Random(8)
@@ -48,14 +50,27 @@ def svg(theme):
         f'<rect x="{64 + 19 * 9.03 + 6:.0f}" y="48" width="9" height="18" fill="{c["accent"]}"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/></rect>',
         f'<line x1="{x0}" y1="{base_y}" x2="{x1}" y2="{base_y}" stroke="{c["rule"]}"/>',
     ]
+    # Animation: the name is "typed" in real time, held on screen, then replays.
+    cycle = total + PAUSE_MS
+    dur = f"{cycle / 1000:.2f}s"
     for i, (ch, start, hold) in enumerate(keys):
         x = x0 + start * scale
         w = hold * scale
         h = 26 if ch != " " else 12
         color = c["bar"] if ch != " " else c["bar2"]
-        parts.append(f'<rect x="{x:.1f}" y="{base_y - h}" width="{w:.1f}" height="{h}" rx="3" fill="{color}" opacity="0.9"/>')
+        k0 = start / cycle            # key pressed
+        k1 = (start + hold) / cycle   # key released
+        k_end = 1 - FADE_MS / cycle   # start fading out before the replay
+        def fade(peak):
+            return (f'<animate attributeName="opacity" dur="{dur}" repeatCount="indefinite" '
+                    f'values="0;0;{peak};{peak};0" keyTimes="0;{k0:.4f};{k0 + 0.0005:.4f};{k_end:.4f};1"/>')
+        appear = fade("0.9")
+        grow = (f'<animate attributeName="width" dur="{dur}" repeatCount="indefinite" '
+                f'values="0;0;{w:.1f};{w:.1f}" keyTimes="0;{k0:.4f};{k1:.4f};1"/>')
+        parts.append(f'<rect x="{x:.1f}" y="{base_y - h}" width="{w:.1f}" height="{h}" rx="3" fill="{color}" opacity="0.9">{appear}{grow}</rect>')
         label = ch if ch != " " else "␣"
-        parts.append(f'<text x="{x + w/2:.1f}" y="{base_y - h - 8}" text-anchor="middle" font-family="{MONO}" font-size="13" fill="{c["muted"]}">{label}</text>')
+        label_anim = fade("1")
+        parts.append(f'<text x="{x + w/2:.1f}" y="{base_y - h - 8}" text-anchor="middle" font-family="{MONO}" font-size="13" fill="{c["muted"]}">{label}{label_anim}</text>')
     parts.append(f'<text x="{x1}" y="{base_y + 24}" text-anchor="end" font-family="{MONO}" font-size="12" fill="{c["muted"]}">each bar is a key: press → release</text>')
     parts.append("</svg>")
     return "\n".join(parts)
