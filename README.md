@@ -48,4 +48,4 @@ Results so far, each one measured and reproducible from the repo:
 
 ## Outside of code
 
-📷 Photography (shot for my high school yearbook) · 📚 Manga and movies · 🎮 Gaming · 🏀 Basketball and pickleball · ➗ Math contests (Euclid Honour Roll)
+📷 Photography/Videography · 📚 Manga and movies · 🎮 Gaming · 🏀 Basketball and pickleball 
