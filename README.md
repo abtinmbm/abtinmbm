@@ -14,7 +14,7 @@ My brother used to wait until I walked away from my unlocked PC. So I built a pr
 | | |
 | --- | --- |
 | 🔐 **[Doppel.exe](https://github.com/abtinmbm/doppel)** | Continuous authentication for Windows. Typing works end to end in a dry run; next up are writing style, then attacking it myself. |
-| 🛩️ **WARG, Autonomy** | Writing ground-station image stitching for the Waterloo Aerial Robotics Group's drone. |
+| 🛩️ **WARG, Autonomy** | Working on ground-station image stitching for the Waterloo Aerial Robotics Group's multi-drone mapping. |
 | 🔊 **Andon** | Listening for machine faults: anomaly detection on machine sounds, in software first and then on a Raspberry Pi Pico. |
 
 ## How Doppel works
