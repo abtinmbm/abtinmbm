@@ -5,9 +5,7 @@
 
 [LinkedIn](https://www.linkedin.com/in/abtin-aryanpour/) · [aaryanpo@uwaterloo.ca](mailto:aaryanpo@uwaterloo.ca) · open to a Summer 2027 co-op
 
-Hey, I'm Abtin, a first-year Computer Engineering student at the University of Waterloo. I like security and machine learning, and I like it best when I can **measure** whether the thing I built actually works.
-
-My brother used to wait until I walked away from my unlocked PC. So I built a program that learns how I type and locks the screen when someone else sits down. That's **Doppel.exe**, and it's still the project I'm proudest of.
+Hey, I'm Abtin, a first-year Computer Engineering student at the University of Waterloo. 
 
 ## Right now
 
