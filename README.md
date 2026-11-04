@@ -56,7 +56,6 @@ Results on synthetic 3-drone missions with known ground truth (simulated; 5 seed
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| **[Doppel.exe](https://github.com/abtinmbm/doppel)** | Continuous authentication for Windows: learns how you type (timing only, no letters stored) and locks the screen when someone else is at the keyboard. Finished as a working dry run; cut errors ~7× on the 136M-keystroke Aalto dataset (EER 0.164 → 0.023). | Python, NumPy, pandas, cryptography, pywin32 |
 | **[CyberShield](https://github.com/abtinmbm/cybershield)** | Cybersecurity discussion forum with a live feed, voting, moderation and fuzzy search. **1st of 32 teams**, FBLC Canada 2025, as sole developer on a team of three. | Django, DRF, JavaScript, Tailwind, AWS |
 | **[School Partner Directory](https://github.com/abtinmbm/FBLA2024)** | Directory connecting schools with community partners, with profiles, sharing and search. **4th of 32 teams**, FBLA Canada 2024. | Django, Tailwind, jQuery, Fuse.js |
 
