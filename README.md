@@ -3,7 +3,7 @@
   <img alt="Abtin Aryanpour, computer engineering at the University of Waterloo" src="assets/header-light.svg" width="100%">
 </picture>
 
-[LinkedIn](https://www.linkedin.com/in/abtin-aryanpour/) · [aaryanpo@uwaterloo.ca](mailto:aaryanpo@uwaterloo.ca) ·[Website](https://abtinmbm.github.io/) · open to a Summer 2027 co-op
+[LinkedIn](https://www.linkedin.com/in/abtin-aryanpour/) · [aaryanpo@uwaterloo.ca](mailto:aaryanpo@uwaterloo.ca) · [Website](https://abtinmbm.github.io/) · open to a Summer 2027 co-op
 
 Hey, I'm Abtin, a first-year Computer Engineering student at the University of Waterloo. 
 
