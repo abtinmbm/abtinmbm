@@ -9,7 +9,7 @@ Hey, I'm Abtin, a first-year Computer Engineering student at the University of W
 
 ## Right now
 
-🔊 **[Andon](https://github.com/abtinmbm/andon)** An andon light that listens: it learns what a healthy machine sounds like and turns green / yellow / red when it starts to sound wrong. The software is done; next it runs on a Raspberry Pi Pico 2 that cuts power to a real fan when it hears a fault.
+🔊 **[Andon](https://github.com/abtinmbm/andon)** An andon light that listens: it learns what a healthy machine sounds like and turns green / yellow / red when it starts to sound wrong. The software is done, and it now runs in C on a Raspberry Pi Pico 2. Next: finish recording three real fans, train on them, and let the Pico cut a fan's power when it hears a fault.
 
 ## Outside of code
 
