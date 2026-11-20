@@ -9,7 +9,7 @@ Hey, I'm Abtin, a first-year Computer Engineering student at the University of W
 
 ## Right now
 
-🔊 **[Andon](https://github.com/abtinmbm/andon)** An andon light that listens: it learns what a healthy machine sounds like and turns green / yellow / red when it starts to sound wrong. The software is done, and on a Raspberry Pi Pico 2 it now hears a fault in a real fan and cuts the fan's power by itself. Next: an hour-long false-stop test, ten trials per fault and a demo video.
+🔊 **[Andon](https://github.com/abtinmbm/andon)** An andon light that listens: it learns what a healthy machine sounds like and turns green / yellow / red when it starts to sound wrong. On a Raspberry Pi Pico 2 it now hears a fault in a real fan and cuts the fan's power by itself, with the model running in C at 1.684 ms per 32 ms of audio. With the fans' loudness matched, it still catches every fault, so it hears more than volume (on the development recordings). Next: an hour-long false-stop test, ten trials per fault and a demo video.
 
 ## Shipped
 
